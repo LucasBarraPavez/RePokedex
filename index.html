@@ -31,8 +31,60 @@
                          <span>Registrar pokemon</span>
                      </div>
                      <div class="card-body">
+                         <div class="mb-3">
+                             <label for="nombre-txt" class="form-label" >Nombre</label>
+                             <input type="text" class="form-control" id="nombre-txt">
+                         </div>
+                         <div class="mb-3">
+                             <label for="descripcion-txt" class="form-label">Descripcion</label>
+                             <textarea id="descripcion-txt"></textarea>
+                         </div>
+                         <div class="mb-3">
+                             <label for="legendario-rb" class="form-label">Legendarios</label>
+                             <div class="form-check form-check-inline">
+                                 <input type="radio" name="legendario-rb" id="legendario-si" class="form-check-input">
+                                 <label for="legendario-si" class="form-check-label">Si</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                <input type="radio" name="legendario-rb" id="legendario-no" class="form-check-input">
+                                <label for="legendario-no" class="form-check-label">No</label>
+                             </div>
+                         </div>
+                         <div class="mb-3">
+                             <label for="tipo-select" class="form-label">Tipo</label>
+                             <select name="form-select" id="tipo-select">
+                                 <option value="1">Planta</option>
+                                 <option value="2">Fuego</option>
+                                 <option value="3">hielo</option>
+                                 <option value="4">lucha</option>
+                                 <option value="5">volador</option>
+                                 <option value="6">acero</option>
+                                 <option value="7">bicho</option>
+                                 <option value="8">veneno</option>
+                                 <option value="9">normal</option>
+                                 <option value="10">fantasma</option>
+                                 <option value="11">hada</option>
+                                 <option value="12">agua</option>
+                                 <option value="13">electrico</option>
+                                 <option value="14">dragon</option>
+                                 <option value="15">psiquico</option>
+                                 <option value="16">siniestro</option>
+                                 <option value="17">roca</option>
+                                 <option value="18">tierra</option>
+                             </select>
 
-                     </div> 
+                         </div>
+                     </div>
+                     <div class="card-footer">
+                         <div class="row">
+                             <div class="col-6">
+                                <button type="button" id="registrar-btn" class="btn btn-success">Registrar</button>
+                             </div>
+                             <div class="col text-end">
+                                <button type="button" id="limpiar-btn" class="btn btn-info">Limpiar</button>
+                             </div>
+                         </div>                        
+                     </div>
                   </div> 
                 </div>
                 <div class="col-12 col-md-6 col-lg-8">
@@ -44,19 +96,14 @@
                 </div>
             </div>
         </main>
-     <footer>
+        <footer>
 
-     </footer>
-
-     <!-- Optional JavaScript; choose one of the two! -->
-
-     <!-- Option 1: Bootstrap Bundle with Popper -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-     <!-- Option 2: Separate Popper and Bootstrap JS -->
-     <!--
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-     -->
-    </body>
-</html>
+        </footer>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="vendor/tinymce/js/tinymce/tinymce.min.js" ></script>
+        <!-- Siempre las librerias de otros van ANTES de mis archivos -->
+        <script src="js/index.js"></script>
+      </body>
+    </html>
